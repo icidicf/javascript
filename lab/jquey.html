@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>hello yangping</title>
+<script type="text/javascript" src="../plugin/highchart/highcharts.com/exporting-server/phantomjs/jquery.1.9.1.min.js"></script>
+</head>
+
+<body>
+	<p>...start</p>
+	<div id="divMsg">Hello World!</div>
+	<input id="btnShow" type="button" value="show"/>
+	<input id="btnHide" type="button" value="hidden"/>
+	<input id="btnChange" type="button" value="change"/>
+	<script>
+		$("#btnShow").bind("click",function(event) {
+			$("#divMsg").show();
+		});
+
+		$("#btnHide").bind("click",function(event) {
+			$("#divMsg").hide();
+		});
+
+		$("#btnChange").bind("click",function(event) {
+			$("#divMsg").html("change to qi");
+		});
+	</script>
+</body>
+</html>
+
